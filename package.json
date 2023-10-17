@@ -1,0 +1,47 @@
+{
+  "name": "leetcode-cheatsheet",
+  "version": "1.4.0",
+  "description": "A handful library for your coding challenges",
+  "main": "main.js",
+  "type": "module",
+  "engines": {
+    "node": "^18.18.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node cheatsheet/main.js"
+  },
+  "bin": {
+    "functional-factorial" : "./bin/functional/factorial.js",
+    "functional-fibonacci" : "./bin/functional/fibonacci.js",
+    "functional-fizzbuzz" : "./bin/functional/fizzbuzz.js",
+    "functional-palindrome" : "./bin/functional/palindrome.js",
+    "oop-factorial" : "./bin/oop/factorial.js",
+    "oop-fibonacci" : "./bin/oop/fibonacci.js",
+    "oop-fizzbuzz" : "./bin/oop/fizzbuzz.js",
+    "oop-palindrome" : "./bin/oop/palindrome.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayaMustika/leetcode-cheatsheet.git"
+  },
+  "keywords": [
+    "leetcode",
+    "javascript",
+    "node.js",
+    "npm"
+  ],
+  "author": "Jaya Mustika",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JayaMustika/leetcode-cheatsheet/issues"
+  },
+  "homepage": "https://github.com/JayaMustika/leetcode-cheatsheet#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.199",
+    "jest": "^29.7.0"
+  }
+}
