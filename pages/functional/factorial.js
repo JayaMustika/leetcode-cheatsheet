@@ -3,30 +3,30 @@ import _ from "lodash";
 
 /**
  * Factorial Iterative Approach
- * @param {number} n 
+ * 
+ * @param {number} n
  */
-function factorialUsingLoop (value) {
-    const n = _.toNumber (value);
-  
-    let formula = n; 
-  
-    for (let i = 1; i < n; i += 1) {
-      formula *= (n-i);
-    }
-    
-    return formula;
-  }
-  
-  /**
-  * Factorial Recursive Approach
-  * @param {number} n 
-  */
-  function factorialUsingrecursive (value) {
-    const n = _.toNumber (value);
+function factorialUsingLoop(value) {
+  const n = _.toNumber(value);
 
-    return n <= 1 
-      ? 1 
-      : factorialUsingrecursive (n - 1) * n; 
+  let formula = n;
+
+  for (let i = 1; i < n; i += 1) {
+    formula *= n - i;
   }
 
-  export { factorialUsingLoop, factorialUsingrecursive };
+  return formula;
+}
+
+/**
+ * Factorial Recursive Approach
+ * 
+ * @param {number} n
+ */
+function factorialUsingrecursive(value) {
+  const n = _.toNumber(value);
+
+  return n <= 1 ? 1 : factorialUsingrecursive(n - 1) * n;
+}
+
+export { factorialUsingLoop, factorialUsingrecursive };

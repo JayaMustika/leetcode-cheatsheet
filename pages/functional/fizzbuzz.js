@@ -2,26 +2,21 @@ import _ from "lodash";
 //import { processArgv } from "./processArgv"
 
 /**
-* FizzBuzz Loop Approach
-* @param {number} sequence
-*/
-function fizzBuzzUsingLoop (value) {
-    const sequence = _.toNumber (value);
+ * FizzBuzz Loop Approach
+ * 
+ * @param {number} sequence
+ */
+function fizzBuzzUsingLoop(value) {
+  const i = _.toNumber(value);
 
-    let array = [];
-    
-    for (let i = 1; i <= sequence; i++) {
-        if (i % 4 === 0 || i % 7 === 0) {
-          array.push (`fizz buzz ${i}`);
-          continue;
-        } else if (i % 2 === 1) {
-          array.push (`fizz ${i}`)
-        } else if (i % 2 === 0) {
-          array.push (`buzz ${i}`)
-        } 
-    }
+  let array = "";
 
-    return array;
+  if ( i % 4 === 0 || i % 7 === 0) {
+    return array.concat(`fizz buzz`);
+  } else if (i % 2 === 1) {
+    return array.concat(`fizz`);
+  } return array.concat(`buzz`);
+  
 }
-
+console.log (fizzBuzzUsingLoop (5));
 export { fizzBuzzUsingLoop };
