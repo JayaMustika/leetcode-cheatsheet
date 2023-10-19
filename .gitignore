@@ -1,4 +1,8 @@
-node_modules/
-coverage/
+.env
 tests/
+coverage/
+winston.md
+combined.log
+bin/logger.js
 package-lock.json
+node_modules/

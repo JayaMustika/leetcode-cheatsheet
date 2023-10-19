@@ -11,13 +11,15 @@
     "node": "18.18.1"
   },
   "scripts": {
+    "logger": "nodemon ./bin/logger.js",
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
-    "start": "node cheatsheet/main.js"
+    "start": "node ./main.js"
   },
   "jest": {
     "collectCoverage": true
   },
   "bin": {
+    "logger": "./bin/logger.js",
     "functional-factorial": "./bin/functional/factorial.js",
     "functional-fibonacci": "./bin/functional/fibonacci.js",
     "functional-fizzbuzz": "./bin/functional/fizzbuzz.js",
@@ -44,11 +46,14 @@
   },
   "homepage": "https://github.com/JayaMustika/leetcode-cheatsheet#readme",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "winston": "^3.11.0",
+    "winston-telegram": "^2.6.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.5",
     "@types/lodash": "^4.14.199",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1"
   }
 }
